@@ -1,10 +1,17 @@
 @import url('bootstrap');
 
+:root{
+  --custom-primary-light: #add8e6;
+  --custom-primary-dark: #60a3b9;
+  --custom-secondary-light: #faebd7;  
+  --custom-dark: #092630;
+}
+
 /* Header */
 
 .navbar {
-  background-color: lightblue;
-  color: #092630;
+  background-color: var(--custom-primary-light);
+  color: var(--custom-dark);
 
   /* from Bootsrap inline style */
   .navbar-nav-scroll {
@@ -13,24 +20,24 @@
 
   /* Active nav item */
   .active {
-    background-color: antiquewhite;
+    background-color: var(--custom-secondary-light);
     border-radius: 50px;
   }
 
   /* Search bar */
   #nav_search {
-    color: #60a3b9;
+    color: var(--custom-primary-dark);
   }
   .search_btn {
-    background-color: antiquewhite;
+    background-color: var(--custom-secondary-light);
   }
   ::placeholder {
-    color: #60a3b9;
+    color: var(--custom-primary-dark);
   }
 
   /* Toggler */
   .navbar-toggler {
-    border-color: #60a3b9;
+    border-color: var(--custom-primary-dark);
     border-radius: 50px;
   }
 
