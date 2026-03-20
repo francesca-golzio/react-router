@@ -1,10 +1,25 @@
+/* Import external frameworks */
 @import url('bootstrap');
 
-:root{
+/* Import icons */
+@import "bootstrap-icons/font/bootstrap-icons";
+
+:root {
   --custom-primary-light: #add8e6;
   --custom-primary-dark: #60a3b9;
-  --custom-secondary-light: #faebd7;  
+  --custom-secondary-light: #faebd7;
   --custom-dark: #092630;
+}
+
+/* Commons */
+
+body {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Header */
@@ -28,9 +43,11 @@
   #nav_search {
     color: var(--custom-primary-dark);
   }
+
   .search_btn {
     background-color: var(--custom-secondary-light);
   }
+
   ::placeholder {
     color: var(--custom-primary-dark);
   }
@@ -45,5 +62,51 @@
 
 
 
+/* Footer */
+
+footer {
+  background: var(--custom-primary-dark);
+  color: var(--custom-dark);
 
 
+
+  div.top_footer {
+    background-color: var(--custom-dark);
+    color: var(--custom-primary-dark);
+    padding: 2rem 0;
+
+
+    .container {
+      gap: 2rem;
+      justify-content: space-between;
+    }
+
+    .ai_chat {
+      background-color: var(--custom-primary-dark);
+      border-radius: 10px;
+      color: var(--custom-dark);
+      padding: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .app {
+
+      img {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+  }
+
+  div.bottom_footer {
+
+    align-items: center;
+    padding: 1% 0;
+
+    ul {
+      gap: 2rem;
+      margin-bottom: 0;
+    }
+  }
+
+}
