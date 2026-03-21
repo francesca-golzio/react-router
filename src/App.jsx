@@ -13,9 +13,9 @@ function App() {
       <BrowserRouter>
         {/* <DefaultLayouts> */}
         <Routes>
-          <Route path="/" element="Home"></Route>
-          <Route path="/products" element="Products"></Route>
-          <Route path="/about" element="About"></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         {/* </DefaultLayouts> */}
       </BrowserRouter>
