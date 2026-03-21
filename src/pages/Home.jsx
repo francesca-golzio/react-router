@@ -1,16 +1,13 @@
-/* import DefaultLayout from "../layouts/DefaultLayouts" */
-import AppHeader from '../components/AppHeader'
-import AppFooter from '../components/AppFooter'
-
 
 function Home() {
 
 
   return (
     <>
-      {/* <DefaultLayout /> */}
-<AppHeader></AppHeader>
-<AppFooter></AppFooter>
+
+      <main>
+        <h2>Home</h2>
+      </main>
 
     </>
   )
