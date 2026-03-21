@@ -1,4 +1,6 @@
-import DefaultLayout from "../layouts/DefaultLayouts"
+/* import DefaultLayout from "../layouts/DefaultLayouts" */
+import AppHeader from '../components/AppHeader'
+import AppFooter from '../components/AppFooter'
 
 
 function Home() {
@@ -6,7 +8,9 @@ function Home() {
 
   return (
     <>
-      <DefaultLayout />
+      {/* <DefaultLayout /> */}
+<AppHeader></AppHeader>
+<AppFooter></AppFooter>
 
     </>
   )

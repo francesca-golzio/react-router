@@ -1,4 +1,6 @@
-import DefaultLayout from "../layouts/DefaultLayouts"
+/* import DefaultLayout from "../layouts/DefaultLayouts" */
+import AppHeader from '../components/AppHeader'
+import AppFooter from '../components/AppFooter'
 
 
 function Products() {
@@ -7,7 +9,9 @@ function Products() {
   return (
     <>
 
-      <DefaultLayout />
+      {/* <DefaultLayout /> */}
+      <AppHeader></AppHeader>
+      <AppFooter></AppFooter>
 
     </>
   )
