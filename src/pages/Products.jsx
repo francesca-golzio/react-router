@@ -1,12 +1,56 @@
-
+import { useState, useEffect } from 'react'
 function Products() {
 
+  const products_api = 'https://fakestoreapi.com/products'
+  const [prodotti, setProdotti] = useState([]);
+
+  function FetchProdotti() {
+    fetch(products_api)
+      .then(res => res.json())
+      .then(prodotti => {
+        //console.log(prodotti)
+        setProdotti(prodotti);
+      })
+      .catch(error => console.log(error))
+  }
+
+  useEffect(FetchProdotti, [])
 
   return (
     <>
 
       <main>
         <h2>Prodotti</h2>
+
+        <div className="container">
+          {/* ⚠️ responsive da sistemare */}
+          <div className="card_deck row row-cols-1 row-cols-sm-2 row-cols-md-4">
+
+            {prodotti.map((prodotto) => (
+
+              <div className="card col" key={prodotto.id}>
+                <img className="card-img-top" src={prodotto.image} alt={prodotto.title} />
+                <div className="card-body">
+                  <h4 className="card-title">{prodotto.title}</h4>
+                  <p className="card-text">{prodotto.description}</p>
+                </div>
+              </div>
+
+            ))}
+
+
+            {/* <div className="card col">
+              <img className="card-img-top" src="https://picsum.photos/id/1/200/300" alt="Title" />
+              <div className="card-body">
+                <h4 className="card-title">Title</h4>
+                <p className="card-text">Text</p>
+              </div>
+            </div> */}
+
+
+          </div>
+        </div>
+
       </main>
 
     </>
