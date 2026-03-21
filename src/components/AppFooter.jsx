@@ -21,7 +21,7 @@ function AppFooter() {
               <ul className="list-unstyled">
                 <li>
                 Mermaid Lagoon, <br />
-                  {/* <span>🏴‍☠️ </span> */} <img src="public/flag.png" alt="country flag" height="15px"/> Neverland
+                  {/* <span>🏴‍☠️ </span> */} <img src="/flag.png" alt="country flag" height="15px"/> Neverland
                 </li>
               </ul>
 
@@ -67,8 +67,8 @@ function AppFooter() {
 
             <ul className="list-unstyled app">
               <li><h5>Our app</h5></li>
-              <li><img src="/public/apple_app.png" alt="get app on Apple Store" height="35px" /></li>
-              <li><img src="/public/google_app.png" alt="get app on Google Play" height="35px" /></li>
+              <li><img src="/apple_app.png" alt="get app on Apple Store" height="35px" /></li>
+              <li><img src="/google_app.png" alt="get app on Google Play" height="35px" /></li>
             </ul>
 
           </div>
