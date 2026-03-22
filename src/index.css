@@ -87,6 +87,11 @@ main {
 
 
   /* Products page */
+
+  .container.products_page {
+    padding: 2rem 0;
+  }
+
   .card_deck {
     justify-content: space-evenly;
     gap: 2rem;
@@ -148,14 +153,17 @@ main {
       }
 
       .card-title {
-        font-family: 'Comic Mono', monospace;
-        text-align: center;
+        /* font-family: 'Comic Mono', monospace; */
+        /* text-align: center; */
+        font-weight: 600;
       }
 
+      /* ⚠️ gestire meglio overflow */
       .card-text {
         /* font-family: 'Quicksand Variable', sans-serif; */
-        max-height: 3rem;
-        overflow-y: scroll;
+        max-height: 1.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
     }
