@@ -17,6 +17,10 @@
 
 /* Commons */
 
+svg.siteLogo {
+  height: 2rem;
+}
+
 body {
   height: 100vh;
   background-color: var(--custom-gray);
@@ -151,9 +155,9 @@ main {
   /* About us page */
 
   .container.meet_crew {
-  padding: 2rem 0 1.5rem 0;
+    padding: 2rem 0 1.5rem 0;
 
-}
+  }
 
   .card.crew-card {
     border: none;
@@ -305,6 +309,11 @@ footer {
 
     align-items: center;
     padding: 1% 0;
+
+    span.brand {
+      font-family: "Miltonian Tattoo", serif;
+      font-size: 1.5rem;
+    }
 
     ul {
       gap: 2rem;
