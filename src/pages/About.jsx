@@ -7,12 +7,12 @@ function About() {
     <>
 
       <main className='about_main_content'>
-        <h2>About</h2>
-
-
         <div className="container">
-          <div className="row g-5">
 
+          <h2>About</h2>
+
+
+          <div className="row members_deck g-5">
             {ourCrew.map((member) => {
 
               return (
@@ -30,17 +30,17 @@ function About() {
                           <p className="card-text profile_role fst-italic"><small><br />{member.role}</small></p>
                         </div>
 
-                      <p className="card-text profile_vibe">{member.vibe}</p>
-                      
+                        <p className="card-text profile_vibe">{member.vibe}</p>
+
                       </div>
 
-                        <img src="https://picsum.photos/100" className="card-img-top" alt={member.name} />
+                      <img src={member.image} className="card-img-top" alt={member.name} />
 
                     </div>
 
                     <div className="card-body member-bio-info">
                       <p className="card-text profile_bio">{member.bio}</p>
-                      <span className="card-text">{member.funFact}</span>
+                      <span className="card-text profile_fun">{member.funFact}</span>
                     </div>
 
                   </div>
@@ -50,8 +50,9 @@ function About() {
               )
             })}
           </div>
-        </div>
 
+
+        </div>
       </main>
 
     </>

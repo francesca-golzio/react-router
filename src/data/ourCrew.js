@@ -7,7 +7,7 @@ const ourCrew = [
     vibe: "High-functioning caffeine addict with a saltwater soul.",
     bio: "The visionary who decided ruling the seven seas involved too much paperwork. Marina ensures our ethics are as solid as a coral reef.",
     funFact: "Once tried to teach a seagull how to use a spreadsheet. The seagull won.",
-    image: "/images/team/marina-ceo.jpg"
+    image: "/marina.png"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const ourCrew = [
     vibe: "Part historian, part fashionista, 100% done with human plastic.",
     bio: "Cleo vets every supplier. She's spent years debunking 'chunky seal' theories, mostly because she finds manatee comparisons offensive to her skincare routine.",
     funFact: "Owns a collection of vintage land-dweller sunglasses because the Atlantic glare is no joke.",
-    image: "/images/team/cleo-curator.jpg"
+    image: "/cleo.png"
   },
   {
     id: 3,
@@ -27,17 +27,17 @@ const ourCrew = [
     vibe: "The one who actually knows how the shell-phone works.",
     bio: "Zaya runs tech and support. She's the reason your orders don't get lost in a literal riptide. Proof you can have scales and still be a 'scale-up' expert.",
     funFact: "Technically banned from local karaoke bars because humans get twitchy when a mermaid grabs the mic.",
-    image: "/images/team/zaya-tech.jpg"
+    image: "/zaya.png"
   },
   {
     id: 4,
     name: "Barnaby",
     role: "Collaborator",
     title: "Chief Cryptid Consultant",
-    vibe: "Tinfoil hat, but make it fashion.",
+    vibe: "Aloha shirt, but make it fashion.",
     bio: "A former amateur hunter who realized the benefits package was better if he joined us. He handles human-mermaid relations and myth-busting.",
     funFact: "Still carries a thermal camera 'just in case' a Kraken shows up at the office party.",
-    image: "/images/team/barnaby-consultant.jpg"
+    image: "/barnaby.png"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const ourCrew = [
     vibe: "The smartest guy in the splash zone.",
     bio: "A PhD who bridges the gap between 'Aquatic Ape Theory' and shipping glass jars without breaking them. He keeps our humor technically accurate.",
     funFact: "Can explain the physiological differences between a mermaid and a manatee in 4 languages.",
-    image: "/images/team/aris-logistics.jpg"
+    image: "/aris.png"
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const ourCrew = [
     vibe: "A human with a really high-quality wetsuit.",
     bio: "Our lead for shore-side boutiques. He's the only one of us who can actually walk into a physical bank without dripping on the carpet.",
     funFact: "Has spent so much time with the pod that he's developed a reflexive fear of fishing nets.",
-    image: "/images/team/finnian-sales.jpg"
+    image: "/finnian.png"
   }
 ];
 

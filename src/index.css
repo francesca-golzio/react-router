@@ -1,6 +1,9 @@
 /* Import external frameworks */
 @import url('bootstrap');
 
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&family=Miltonian+Tattoo&display=swap');
+
 /* Import icons */
 @import "bootstrap-icons/font/bootstrap-icons";
 
@@ -144,12 +147,14 @@ main {
 
 
   /* About us page */
-
   .card.crew-card {
     border: none;
+    box-shadow: 2px 2px 20px var(--custom-primary-light);
+    border-radius: 30px 0 30px 0;
 
     .card-header {
-      background-color: var(--custom-secondary-light);
+      /* background-color: var(--custom-secondary-light); */
+      background-color: transparent;
       color: var(--custom-dark);
       display: flex;
       flex-direction: column;
@@ -157,21 +162,33 @@ main {
       padding-right: 1.5rem;
       padding-bottom: 3rem;
       padding-left: 1.5rem;
+      border-radius: 0 0 30px 0;
       border: none;
-      border-radius: 30px 0 0 0;
       position: relative;
 
       h3 {
+        font-family: "Miltonian Tattoo", serif;
+        font-size: 2.5rem;
+        color: var(--custom-dark);
         text-align: center;
         padding-bottom: 1rem;
       }
 
       .profile_titles {
+        color: var(--custom-primary-dark);
         width: 120%;
         padding-right: 1.5rem;
+
+        .profile_title {
+          font-weight: 700;
+        }
+
+        .profile_role {}
       }
 
       .profile_vibe {
+        color: var(--custom-primary-dark);
+        font-weight: 700;
         text-align: center;
         font-size: small;
         padding: 0 1.5rem;
@@ -180,41 +197,38 @@ main {
     }
 
     img {
-      height: 100px;
-      width: 100px;
-      border: 3px solid #ff7f50c4;
+      height: 120px;
+      width: 120px;
+      border: 3px solid #60a3b9c4;
+      background-color: var(--custom-primary-dark);
       border-radius: 50%;
       position: absolute;
       bottom: -10%;
       align-self: center;
-      box-shadow: 1px 1px 20px coral;
+      box-shadow: 2px 2px 20px var(--custom-primary-dark);
     }
 
   }
 
   .card-body.member-bio-info {
-    background-color: var(--custom-primary-light);
+    /* background-color: var(--custom-primary-light); */
     padding: 2.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    border-radius: 0 0 30px 0;
     display: flex;
     gap: 2rem;
-
-    .profile_title {
-      font-style: italic;
-      font-size: small;
-      color: var(--custom-dark);
-      text-align: center;
-      width: 30%;
-      align-self: center;
-    }
 
     .profile_role {
       text-align: left;
       width: 60%;
     }
 
+    .profile_fun {
+      border: 2px dashed var(--custom-primary-light);
+      border-radius: 40% 40% 60% 60% / 60% 50% 80% 35%;
+      font-size: 0.8rem;
+      padding: 1.5rem;
+    }
   }
 
 }
