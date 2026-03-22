@@ -7,12 +7,10 @@ function About() {
     <>
 
       <main className='about_main_content'>
-        <div className="container">
 
-          <h2>About</h2>
-
-
-          <div className="row members_deck g-5">
+        <div className="container meet_crew">
+          <h2 className='py-2'>Meet our crew!</h2>
+          <div className="row members_deck g-5 py-2">
             {ourCrew.map((member) => {
 
               return (
@@ -50,10 +48,45 @@ function About() {
               )
             })}
           </div>
-
-
         </div>
-      </main>
+
+        <div className="container-fluid we_are">
+          <div className="container">
+            <div className='py-2'>
+              <h2>The Tail End of the Story</h2>
+              <p>
+                We aren't your average retail team. We're a collective of young mermaids who got tired of seeing the same old "shore-side" junk washing up in our lagoons. We decided that if the humans weren't going to provide high-quality, ethically sourced goods, we'd just have to surface and do it ourselves.
+
+                Think of us as your underwater personal shoppers—minus the soggy packaging and with a much better sense of flow.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="container-fluid ethics">
+          <div className="container py-2">
+            <h2>Our "No-Fin-Ky" Ethics</h2>
+            <p>
+              We're pretty protective of our playground (the ocean, in case you missed the memo). That's why our ethics aren't just a marketing ploy; they're a lifestyle.
+            </p>
+            <ul>
+              <li>
+                <span>Sustainably Sourced:</span> If it harms the habitat, it's a hard pass. We vet every supplier to ensure they aren't being shellfish with the planet's resources.
+              </li>
+              <li>
+                <span>Zero-Waste Waves:</span> We aim for minimal packaging. If we could ship things in bubble-wrapped seaweed, we probably would, but for now, we stick to recycled, compostable materials.
+              </li>
+              <li>
+                <span>Fair Treasure:</span> Everyone in our supply chain gets a fair share of the "doubloons." No exploitative labor—human or otherwise.
+              </li>
+              <li>
+                <span>Cruelty-Free:</span> Tested on us, never on our fishy friends.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </main >
 
     </>
   )
