@@ -22,17 +22,24 @@ function Products() {
       <main>
         <h2>Prodotti</h2>
 
+
+
         <div className="container">
           {/* ⚠️ responsive da sistemare */}
           <div className="card_deck row row-cols-1 row-cols-sm-2 row-cols-md-4">
 
             {prodotti.map((prodotto) => (
 
+
               <div className="card col" key={prodotto.id}>
+                <span className="label">
+                  <i className='bi bi-star-fill'></i> {prodotto.rating.rate} ({prodotto.rating.count})
+                </span>
                 <img className="card-img-top" src={prodotto.image} alt={prodotto.title} />
                 <div className="card-body">
-                  <h4 className="card-title">{prodotto.title}</h4>
-                  <p className="card-text">{prodotto.description}</p>
+                  <div className="price">{`${prodotto.price} $`}</div>
+                  <h5 className="card-title">{prodotto.title}</h5>
+                  {/* <p className="card-text">{prodotto.description}</p> */}
                 </div>
               </div>
 
