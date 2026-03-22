@@ -84,7 +84,27 @@ a {
 
 main {
 
+/* Home page */
 
+.container-fluid.we_are_home {
+  padding: 2rem 0;
+
+
+  svg {
+    height: 150px;
+    flex-shrink: 0;
+  }
+}
+
+.yUs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container.home_stay {
+  margin: 0 auto;
+
+}
 
   /* Products page */
 
