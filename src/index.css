@@ -38,6 +38,17 @@ a {
   background-color: var(--custom-primary-light);
   color: var(--custom-dark);
 
+  #navbarScroll.navbar-collapse.collapse.show {
+    max-width: 250px;
+    text-align: center;
+    /* ⚠️ da capire come allinearlo a dx */
+  }
+
+  h1 {
+    color: var(--custom-dark);
+    font-family: "Miltonian Tattoo", serif;
+  }
+
   /* from Bootsrap inline style */
   .navbar-nav-scroll {
     --bsScrollHeight: 100px;
@@ -50,7 +61,7 @@ a {
   }
 
   /* Search bar */
-  #nav_search {
+  /* #nav_search {
     color: var(--custom-primary-dark);
   }
 
@@ -60,11 +71,11 @@ a {
 
   ::placeholder {
     color: var(--custom-primary-dark);
-  }
+  } */
 
   /* Toggler */
   .navbar-toggler {
-    border-color: var(--custom-primary-dark);
+    background-color: var(--custom-secondary-light);
     border-radius: 50px;
   }
 
