@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
+
 function Products() {
 
   const products_api = 'https://fakestoreapi.com/products'
   const [prodotti, setProdotti] = useState([]);
+
 
   function FetchProdotti() {
     fetch(products_api)
@@ -32,9 +36,12 @@ function Products() {
                 </span>
                 <img className="card-img-top" src={prodotto.image} alt={prodotto.title} />
                 <div className="card-body">
+                  <div className='product_link'>
+                    <Link href='/'>🏄 Surf to product page</Link>
+                  </div>
                   <div className="price">{`${prodotto.price} $`}</div>
                   <h5 className="card-title">{prodotto.title}</h5>
-                  <p className="card-text">{prodotto.description}</p>
+                  {/* <p className="card-text">{prodotto.description}</p> */}
                 </div>
               </div>
             ))}

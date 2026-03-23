@@ -84,27 +84,27 @@ a {
 
 main {
 
-/* Home page */
+  /* Home page */
 
-.container-fluid.we_are_home {
-  padding: 2rem 0;
+  .container-fluid.we_are_home {
+    padding: 2rem 0;
 
 
-  svg {
-    height: 150px;
-    flex-shrink: 0;
+    svg {
+      height: 150px;
+      flex-shrink: 0;
+    }
   }
-}
 
-.yUs {
-  display: flex;
-  justify-content: space-around;
-}
+  .yUs {
+    display: flex;
+    justify-content: space-around;
+  }
 
-.container.home_stay {
-  margin: 0 auto;
+  .container.home_stay {
+    margin: 0 auto;
 
-}
+  }
 
   /* Products page */
 
@@ -170,21 +170,31 @@ main {
           z-index: 10;
         }
 
+        div.product_link {
+          font-size: 0.8rem;
+          font-style: italic;
+          font-weight: 600;
+          color: var(--custom-dark);
+          text-decoration: underline;
+          text-align: right;
+          margin-bottom: 1.5rem;
+        }
       }
 
       .card-title {
         /* font-family: 'Comic Mono', monospace; */
         /* text-align: center; */
         font-weight: 600;
+        font-size: 1.1rem;
       }
 
       /* ⚠️ gestire meglio overflow */
-      .card-text {
-        /* font-family: 'Quicksand Variable', sans-serif; */
+      /* .card-text {
         max-height: 1.5rem;
         overflow: hidden;
         text-overflow: ellipsis;
-      }
+      } */
+
 
     }
   }
