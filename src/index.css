@@ -81,10 +81,11 @@ a {
 
 }
 
+/* Main */
 
 main {
 
-  /* Home page */
+  /*#region 🏠 Home page */
 
   .container-fluid.we_are_home {
     padding: 2rem 0;
@@ -106,8 +107,9 @@ main {
 
   }
 
-  /* Products page */
+  /*#endregion Home page */
 
+  /*#region 👖👕 Products page */
   .container.products_page {
     padding: 2rem 0;
   }
@@ -200,8 +202,9 @@ main {
   }
 
 
+  /*#endregion Products page */
 
-  /* About us page */
+  /*#region 🙋‍♂️ About us page */
 
   .container.meet_crew {
     padding: 2rem 0 1.5rem 0;
@@ -293,29 +296,27 @@ main {
     }
   }
 
-}
 
-.container-fluid.we_are {
-  background-color: var(--custom-primary-light);
-  padding: 2rem 0 1.5rem 0;
-}
-
-.container-fluid.ethics {
-  padding: 2rem 0 1.5rem 0;
-
-  ::marker {
-    color: var(--custom-primary-dark);
+  .container-fluid.we_are {
+    background-color: var(--custom-primary-light);
+    padding: 2rem 0 1.5rem 0;
   }
 
-  span {
-    font-weight: 600;
+  .container-fluid.ethics {
+    padding: 2rem 0 1.5rem 0;
+
+    ::marker {
+      color: var(--custom-primary-dark);
+    }
+
+    span {
+      font-weight: 600;
+    }
   }
+
+  /*#endregion About us page */
+
 }
-
-
-
-
-
 
 
 /* Footer */
@@ -323,8 +324,6 @@ main {
 footer {
   background: var(--custom-primary-dark);
   color: var(--custom-dark);
-
-
 
   div.top_footer {
     background-color: var(--custom-dark);
