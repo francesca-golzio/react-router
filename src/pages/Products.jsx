@@ -37,7 +37,7 @@ function Products() {
                 <img className="card-img-top" src={prodotto.image} alt={prodotto.title} />
                 <div className="card-body">
                   <div className='product_link'>
-                    <Link href='/'>🏄 Surf to product page</Link>
+                    <Link to={`/products/${prodotto.id}`}>🏄 Surf to product page</Link>
                   </div>
                   <div className="price">{`${prodotto.price} $`}</div>
                   <h5 className="card-title">{prodotto.title}</h5>
